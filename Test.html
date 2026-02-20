@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bali Hati Program</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sliders = document.querySelectorAll(".image-slider");
+
+    sliders.forEach((slider) => {
+        const track = slider.querySelector(".slider-track");
+        const slides = track.querySelectorAll("img");
+        let index = 0;
+
+        setInterval(() => {
+            index++;
+
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            track.style.transform = `translateX(-${index * 100}%)`;
+
+        }, 3000); // moves every 3 seconds
+
+    });
+
+});
+</script>
+
+
+
+<body>
+	<section>
+		<div class="top-center">
+			<p id="home" class="top-text">BALI HATI</p>
+    		<img src="Logo.png" class="logo" >
+    		<p class="bottom-text">PROGRAM</p>
+		</div>
+	</section>
+
+<!-- Side Navigation -->
+<nav class="side-nav">
+
+    <img src="Logo.png" class="small-logo">
+
+    <ul class="side-menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#media">MEDIA</a></li>
+        <li><a href="#program">PROGRAM</a></li>
+        <li><a href="#about">ABOUT</a></li>
+    </ul>
+</nav>
+
+<!-- Tempat Information Media -->
+
+<section id="media" class="hero">
+
+    <div class="hero-side-label" style="z-index:1">
+        <span class="small-label">INFORMATION</span>
+        <h2 class="big-label">MEDIA</h2>
+    </div>
+
+    <div class="hero-content" style="margin-left:10%;">
+		<div class="image-slider" style="width:1000px; height:750px">
+    		<div class="slider-track">
+       		<img src="images/Media2.jpg">
+       		<img src="images/Media2.jpg">
+
+			</div>
+		</div>
+    </div>
+
+</section>
+
+    	<!-- Hero/Apalah tak kasih nama-->
+
+<div class="marquee">
+    <h1 class="hero-title">
+        BALI HATI // BALI HATI // BALI HATI // BALI HATI //
+    </h1>
+</div>
+
+		<!-- Program Section 1 -->
+
+	<div id="program" style="margin-left: 125px">
+      <h2 class="big-label">PROGRAM</h2>
+	</div>
+
+	<section class="program">
+    
+	<div class="image-slider">
+    	<div class="slider-track">
+       	<img src="images/DCP1.jpg">
+        	<img src="images/DCP2.jpg">
+			<img src="images/DCP3.jpg">
+		</div>
+	</div>
+
+		<div class="program-text">
+			<h2>Digital Classroom Program</h2>
+        	<p>
+           	The Digital Classroom Program integrates modern technology into daily learning.
+            Students use digital tools, interactive platforms, and multimedia resources
+            to enhance their understanding and creativity.
+        </p>
+		</div>
+	</section>
+
+    	<!-- Program Section 2 -->
+
+    <section class="program reverse">
+
+	<div class="image-slider">
+    	<div class="slider-track">
+       	<img src="images/halloween1.jpg">
+        	<img src="images/halloween2.jpg">
+			<img src="images/halloween3.jpg">
+		</div>
+	</div>
+
+        <div class="program-text">
+            <h2>Halloween</h2>
+            <p>
+              	Bali Hati International School Spooky Halloween Party
+					A day filled with creativity, laughter, and school spirit! 
+					From amazing class performances and exciting games to our Student 
+					Council's fun bazaar everyone brought their best energy and Halloween vibes!
+            </p>
+        </div>
+    </section>
+
+		<!-- Program Section 3 -->
+
+<section id="about" class="program">
+    
+	<div class="image-slider">
+    	<div class="slider-track">
+       	<img src="images/camp1.jpg">
+        	<img src="images/camp2.jpg">
+			<img src="images/camp3.jpg">
+		</div>
+	</div>
+
+		<div class="program-text">
+			<h2>Survival Camp</h2>
+        	<p>
+           	Surviving, bonding, and making memories at the Bali Hati 
+				International School Survival Camp! From camping at Taman Danu, trekking 
+				through nature, and competing in a MasterChef- style cooking challenge, to 
+				laughing through fun games and teamwork-filled moments - every activity brought us closer together.
+        </p>
+		</div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        	<p>Bali Hati School © 2026</p>
+			<p>CrossWorth/Dede Personal Work</p>
+    </footer>
+
+</body>
+</html>
